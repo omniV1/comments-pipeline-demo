@@ -113,3 +113,36 @@ form {
 .btn-primary:hover {
   background-color: #3e2062;
 }
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #565e64;
+}
+
+.search-form {
+  background: #f9f9fb;
+  padding: 16px 20px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 16px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-row .form-control {
+  flex: 1;
+}
+
+.result-count {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}

@@ -10,6 +10,22 @@
 <div class="container">
   <h1>Welcome to the comments application!</h1>
 
+  <form th:action="@{/}" method="get" class="search-form">
+    <div class="mb-3">
+      <label for="search" class="form-label">Search Comments</label>
+      <div class="search-row">
+        <input type="text" class="form-control" id="search" name="search"
+               th:value="${search}" placeholder="Search by author or content...">
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a th:href="@{/}" class="btn btn-secondary">Clear</a>
+      </div>
+    </div>
+  </form>
+
+  <p class="result-count" th:text="'Showing ' + ${showing} + ' of ' + ${total} + ' comments'">
+    Showing 3 of 3 comments
+  </p>
+
   <table class="table">
     <thead>
       <tr>
